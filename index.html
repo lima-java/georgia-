@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es-ES" itemscope itemtype="https://schema.org/ArtGallery">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Georgia Suter - Ocean Art</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Descubre el arte en resina inspirado en el    océano de Georgia Suter. Obras únicas que capturan la belleza y energía del mar. Compra online o encarga tu pieza personalizada.">
+    <meta name="keywords" content="arte en resina, arte oceánico, Georgia Suter, arte inspirado en el mar, obras de arte en resina, arte contemporáneo, decoración con arte oceánico, cursos de arte en resina">    
+</head>
+<body>
+    <!-- Menú hamburguesa móvil -->
+    <div class="mobile-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <a href="/" class="logo">Georgia Suter</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li class="cart-icon" onclick="toggleCart()">
+                    🛒
+                    <span class="cart-count" id="cartCount">0</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+    <div class="hero-inner">
+        <div>
+            <img src="fotos/1.jpg" class="introduction-photo" 
+            alt="Georgia Suter, artista especializada en arte oceánico con resina"
+            loading="lazy">
+        </div>
+        <!-- Mensaje principal -->
+        <div class="hero-content">
+            <h1>Arte Inspirado en el Oceano</h1>
+            <p>Explora la coleccion de Georgia Suter: piezas unicas que capturan la belleza, el movimiento y la profundidad del mar.</p>
+            <a href="#galeria" class="cta-btn">Ver Galeria</a>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="hero-newsletter">
+            <h3>Unete a la Comunidad</h3>
+            <p>Recibe novedades sobre nuevas obras, exposiciones y contenido exclusivo directamente en tu correo.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault();">
+                <input type="email" placeholder="tu@email.com" required>
+                <button type="submit">Suscribirme</button>
+            </form>
+            <p class="newsletter-privacy">Sin spam. Puedes darte de baja en cualquier momento.</p>
+        </div>
+
+    </div>
+</section>
+    <!-- Sobre mí -->
+    <section id="sobre-mi">
+        <div class="hero-flex-info">
+            <div class="hero-flex-info1">
+                <h3>Sumérgete en el arte del océano</h3>
+                <p>Cada obra que nace en mi taller es una invitación a detener el tiempo, a sentir la calma y la fuerza
+                    del mar en un instante eterno. Trabajo con resina, pigmentos y elementos naturales para recrear la
+                    belleza cambiante del océano: sus olas, su profundidad y su luz.</p>
+            </div>
+            <div class="hero-flex-info2">
+                <h3>Explora mi mundo Ocean Art:</h3>
+                <ul>
+                    <li>Obras originales a la venta o por encargo personalizadas</li>
+                    <li>Cursos online y presenciales</li>
+                    <li>Venta de bases DM artesanales personalizadas</li>
+                </ul>
+                <br>
+                <blockquote><i>"Déjate llevar por la energía del agua y descubre cómo el arte puede conectar tierra,
+                        alma y océano."</i></blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería Desktop -->
+    <section id="galeria">
+        <h2 class="section-title">Obras Destacadas</h2>
+        <div class="gallery-grid" id="desktopGallery">
+            <!-- Obras se cargarán dinámicamente -->
+        </div>
+    </section>
+
+    <!-- Carrusel Móvil -->
+    <div class="mobile-carousel-container">
+        <div class="mobile-carousel" id="mobileCarousel">
+            <!-- Obras del carrusel se cargarán dinámicamente -->
+        </div>
+        <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+
+    <!-- Blog / Consejos -->
+    <section id="blog">
+        <h2 class="section-title">Consejos y Novedades</h2>
+        <p class="blog-subtitle">Descubre tecnicas, inspiracion y todo sobre el arte en resina directamente desde mi taller.</p>
+        <div class="blog-grid">
+            <article class="blog-card">
+                <img src="fotos/1.jpg" alt="Guia basica para empezar con resina" loading="lazy">
+                <div class="blog-card-body">
+                    <span class="blog-card-tag">Resina</span>
+                    <h3>Guia basica para empezar con resina epoxy</h3>
+                    <p>Todo lo que necesitas saber antes de tu primera pieza: materiales, seguridad y consejos clave.</p>
+                    <a href="#" class="blog-card-link">Leer articulo &rarr;</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <img src="fotos/2.png" alt="Colores del oceano en el arte" loading="lazy">
+                <div class="blog-card-body">
+                    <span class="blog-card-tag">Inspiracion</span>
+                    <h3>Como capturar los colores del oceano</h3>
+                    <p>Aprende a mezclar pigmentos para conseguir esos tonos azules y turquesas tan especiales.</p>
+                    <a href="#" class="blog-card-link">Leer articulo &rarr;</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <img src="fotos/3.png" alt="Errores comunes con resina" loading="lazy">
+                <div class="blog-card-body">
+                    <span class="blog-card-tag">Consejos</span>
+                    <h3>5 errores comunes al trabajar con resina</h3>
+                    <p>Evita los fallos mas frecuentes que cometen los principiantes y ahorra tiempo y material.</p>
+                    <a href="#" class="blog-card-link">Leer articulo &rarr;</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <img src="fotos/4.png" alt="Decorar con arte oceanico" loading="lazy">
+                <div class="blog-card-body">
+                    <span class="blog-card-tag">Decoracion</span>
+                    <h3>Ideas para decorar tu hogar con arte oceanico</h3>
+                    <p>Transforma cualquier espacio con piezas que evocan la serenidad y energia del mar.</p>
+                    <a href="#" class="blog-card-link">Leer articulo &rarr;</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <img src="fotos/5.png" alt="Cuidado de obras en resina" loading="lazy">
+                <div class="blog-card-body">
+                    <span class="blog-card-tag">Cuidados</span>
+                    <h3>Como cuidar y mantener tus obras en resina</h3>
+                    <p>Consejos practicos para que tus piezas se mantengan perfectas durante anos.</p>
+                    <a href="#" class="blog-card-link">Leer articulo &rarr;</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <img src="fotos/6.png" alt="Proceso creativo del ocean art" loading="lazy">
+                <div class="blog-card-body">
+                    <span class="blog-card-tag">Proceso</span>
+                    <h3>Detras de la obra: mi proceso creativo paso a paso</h3>
+                    <p>Acompanami en un recorrido por las fases de creacion, desde la idea hasta la pieza terminada.</p>
+                    <a href="#" class="blog-card-link">Leer articulo &rarr;</a>
+                </div>
+            </article>
+        </div>
+        <a href="#" class="blog-ver-mas">Ver todos los articulos</a>
+    </section>
+
+    <!-- Resenas -->
+    <section id="resenas">
+        <h2 class="section-title">Lo que dicen mis clientes</h2>
+        <p class="resenas-subtitle">Experiencias reales de personas que han confiado en mi arte para dar vida a sus espacios.</p>
+        <div class="resenas-grid">
+            <div class="resena-card">
+                <div class="resena-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="resena-text">"La pieza que encargue para el salon ha transformado completamente el espacio. Cada vez que la miro siento la calma del mar. Georgia entendio exactamente lo que buscaba."</p>
+                <div class="resena-author">
+                    <div class="resena-avatar">ML</div>
+                    <div class="resena-author-info">
+                        <h4>Maria Lopez</h4>
+                        <span>Barcelona, Espana</span>
+                    </div>
+                </div>
+            </div>
+            <div class="resena-card">
+                <div class="resena-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="resena-text">"Regale una obra a mi pareja por nuestro aniversario y fue el mejor regalo que he hecho nunca. La calidad del trabajo es extraordinaria y el trato con Georgia impecable."</p>
+                <div class="resena-author">
+                    <div class="resena-avatar">CR</div>
+                    <div class="resena-author-info">
+                        <h4>Carlos Rodriguez</h4>
+                        <span>Madrid, Espana</span>
+                    </div>
+                </div>
+            </div>
+            <div class="resena-card">
+                <div class="resena-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="resena-text">"Hice el curso presencial de resina y fue una experiencia maravillosa. Georgia es una profesora increible, muy paciente y apasionada. Totalmente recomendable."</p>
+                <div class="resena-author">
+                    <div class="resena-avatar">AS</div>
+                    <div class="resena-author-info">
+                        <h4>Ana Sanchez</h4>
+                        <span>Girona, Espana</span>
+                    </div>
+                </div>
+            </div>
+            <div class="resena-card">
+                <div class="resena-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="resena-text">"Tengo tres piezas de Georgia en casa y cada una es unica. Los detalles, los colores, la textura... se nota que cada obra esta hecha con mucho carino y dedicacion."</p>
+                <div class="resena-author">
+                    <div class="resena-avatar">PG</div>
+                    <div class="resena-author-info">
+                        <h4>Paula Garcia</h4>
+                        <span>Valencia, Espana</span>
+                    </div>
+                </div>
+            </div>
+            <div class="resena-card">
+                <div class="resena-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="resena-text">"Tengo tres piezas de Georgia en casa y cada una es unica. Los detalles, los colores, la textura... se nota que cada obra esta hecha con mucho carino y dedicacion."</p>
+                <div class="resena-author">
+                    <div class="resena-avatar">PG</div>
+                    <div class="resena-author-info">
+                        <h4>Paula Garcia</h4>
+                        <span>Valencia, Espana</span>
+                    </div>
+                </div>
+            </div>
+            <div class="resena-card">
+                <div class="resena-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="resena-text">"Tengo tres piezas de Georgia en casa y cada una es unica. Los detalles, los colores, la textura... se nota que cada obra esta hecha con mucho carino y dedicacion."</p>
+                <div class="resena-author">
+                    <div class="resena-avatar">PG</div>
+                    <div class="resena-author-info">
+                        <h4>Paula Garcia</h4>
+                        <span>Valencia, Espana</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <h2 class="section-title">Contacto</h2>
+        <div class="contact-mobile">
+            <a href="tel:+34915556789" class="contact-btn">📞 Llamar</a>
+            <a href="/cdn-cgi/l/email-protection#f1989f979eb196949e839698908284859483df929e9c" class="contact-btn">✉️ Email</a>
+            <a href="https://wa.me/34915556789?text=Hola%20Georgia,%20me%20interesa%20tu%20arte" 
+               class="contact-btn whatsapp" target="_blank">💬 WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Georgia Suter Ocean Art</h3>
+                <p>Arte en resina inspirado en el océano. Costa Brava, Spain</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>📍 Costa Brava, Spain</p>
+                <p>✉️ <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c5acaba3aa85a2a0aab7a2aca4b6b0b1a0b7eba6aaa8">[email&#160;protected]</a></p>
+                <p>📞 +34 915 556 789</p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <div class="social-icons">
+                    <a href="https://instagram.com/georgiasuter.art" target="_blank">📷 Instagram</a>
+                    <a href="#" target="_blank">🎨 Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Georgia Suter Ocean Art. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botones flotantes móviles -->
+    <div class="mobile-floating-btns">
+        <a href="https://wa.me/34915556789?text=Hola%20Georgia,%20me%20interesa%20tu%20arte" 
+           class="whatsapp-float" target="_blank">💬</a>
+        <a href="tel:+34915556789" class="call-float">📞</a>
+    </div>
+
+    <!-- Modal del carrito -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-content">
+            <span class="cart-close" onclick="toggleCart()">&times;</span>
+            <h2>Mi Carrito</h2>
+            <div id="cartItems"></div>
+            <div class="cart-total" id="cartTotal">Total: 0€</div>
+
+            <div id="orderFormSection" style="display:none;">
+                <h3>Datos de Contacto</h3>
+                <form class="order-form" id="orderForm">
+                    <input type="text" placeholder="Nombre completo" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Teléfono" required>
+                    <input type="text" placeholder="Dirección de envío" required>
+                    <button type="submit" class="submit-order">Confirmar Pedido</button>
+                </form>
+            </div>
+
+            <button class="checkout-btn" id="checkoutBtn" onclick="showOrderForm()">Proceder al Pedido</button>
+        </div>
+    </div>
+    <!-- =============================================
+     BANNER DE COOKIES – Georgia Suter Ocean Art
+     Añade este bloque justo ANTES de </body>
+     (ya tienes <script src="script.js"> al final,
+     así que pégalo antes de esa etiqueta)
+     ============================================= -->
+
+<div id="cookieBanner" class="cookie-banner" role="dialog" aria-modal="true"
+     aria-label="Aviso de cookies" aria-live="polite">
+  <div class="cookie-banner__inner">
+
+    <div class="cookie-banner__icon" aria-hidden="true">🍪</div>
+
+    <div class="cookie-banner__text">
+      <strong>Este sitio usa cookies</strong>
+      <p>
+        Utilizamos cookies propias y de terceros para mejorar tu experiencia,
+        analizar el tráfico y personalizar contenidos. Puedes aceptarlas o
+        rechazarlas en cualquier momento.
+        <a href="#" class="cookie-banner__link">Política de cookies</a>
+      </p>
+    </div>
+
+    <div class="cookie-banner__actions">
+      <button id="cookieBtnReject" class="cookie-btn cookie-btn--reject">
+        Rechazar
+      </button>
+      <button id="cookieBtnAccept" class="cookie-btn cookie-btn--accept">
+        Aceptar cookies
+      </button>
+    </div>
+  </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
